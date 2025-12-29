@@ -38,14 +38,7 @@ function Header1() {
             href: "/about",
             description: "",
         },
-        {
-            title: "Services",
-            description: "Our offerings",
-            items: [
-                { title: "Study in UK", href: "/services/uk", description: "Study in UK" },
-                { title: "Visa Assistance", href: "/services/visa", description: "Visa Assistance" },
-            ],
-        },
+
         {
             title: "Team",
             href: "/team",
