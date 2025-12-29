@@ -124,12 +124,7 @@ function Header1() {
                             Toggle dark mode
                         </Label>
                     </div>
-                    <Button
-                        className={cn(
-                            "font-bold",
-                            isDarkMode ? "bg-white text-black" : "bg-black text-white"
-                        )}
-                    >JOIN US</Button>
+
                 </div>
                 <div className="flex w-12 shrink lg:hidden items-end justify-end">
                     <Button variant="ghost" onClick={() => setOpen(!isOpen)}>
