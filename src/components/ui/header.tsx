@@ -19,8 +19,15 @@ import { Sun, Moon } from "lucide-react"; // Added Sun, Moon imports
 import { Label } from "@/components/ui/label"; // Added Label import
 
 
+interface NavItem {
+  title: string;
+  href?: string;
+  description: string;
+  items?: NavItem[];
+}
+
 function Header1() {
-    const navigationItems = [
+    const navigationItems: NavItem[] = [
         {
             title: "Home",
             href: "/",
@@ -30,6 +37,14 @@ function Header1() {
             title: "About us",
             href: "/about",
             description: "",
+        },
+        {
+            title: "Services",
+            description: "Our offerings",
+            items: [
+                { title: "Study in UK", href: "/services/uk", description: "Study in UK" },
+                { title: "Visa Assistance", href: "/services/visa", description: "Visa Assistance" },
+            ],
         },
         {
             title: "Team",
