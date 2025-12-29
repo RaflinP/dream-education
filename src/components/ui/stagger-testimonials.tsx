@@ -277,5 +277,3 @@ export const StaggerTestimonials: React.FC = () => {
     </div>
   );
 };
-
-export { StaggerTestimonials };
