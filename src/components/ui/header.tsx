@@ -160,16 +160,18 @@ function Header1() {
                                         )}
                                         {item.items &&
                                             item.items.map((subItem) => (
-                                                <Link
-                                                    key={subItem.title}
-                                                    href={subItem.href}
-                                                    className="flex justify-between items-center"
-                                                >
-                                                    <span className="text-white">
-                                                        {subItem.title}
-                                                    </span>
-                                                    <MoveRight className="w-4 h-4 stroke-1" />
-                                                </Link>
+                                                subItem.href && (
+                                                    <Link
+                                                        key={subItem.title}
+                                                        href={subItem.href}
+                                                        className="flex justify-between items-center"
+                                                    >
+                                                        <span className="text-white">
+                                                            {subItem.title}
+                                                        </span>
+                                                        <MoveRight className="w-4 h-4 stroke-1" />
+                                                    </Link>
+                                                )
                                             ))}
                                     </div>
                                 </div>
